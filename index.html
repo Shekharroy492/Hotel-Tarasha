@@ -138,8 +138,8 @@
         
         <div class="rooms-grid">
           <div class="room-card">
-            <div class="room-image">
-              <img src="https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=500&auto=format&fit=crop&q=70" alt="AC Room">
+            <div class="room-image2">
+        
               <span class="room-badge">From ₹2,000</span>
             </div>
             <div class="room-content">
@@ -152,13 +152,13 @@
                 <span>📶 WiFi</span>
                 <span>🚿 Attached Bath</span>
               </div>
-              <a href="#booking" class="btn btn-primary btn-book-room" data-room="ac">Book Now</a>
+              
             </div>
           </div>
 
           <div class="room-card">
             <div class="room-image">
-              <img src="https://images.unsplash.com/photo-1590618946839-c237cc4c6cf0?w=500&auto=format&fit=crop&q=70" alt="Non-AC Room">
+              
               <span class="room-badge">From ₹1,000</span>
             </div>
             <div class="room-content">
@@ -170,9 +170,7 @@
                 <span>📺 TV</span>
                 <span>📶 WiFi</span>
                 <span>🚿 Attached Bath</span>
-              </div>
-              <a href="#booking" class="btn btn-primary btn-book-room" data-room="nonac">Book Now</a>
-            </div>
+              
           </div>
         </div>
       </div>
@@ -220,125 +218,7 @@
     </section>
 
     <!-- Dining Section -->
-    <!-- Booking Section -->
-    <section id="booking" class="section booking">
-      <div class="wrap">
-        <h2 class="section-title">Reserve Your Stay</h2>
-        <p class="section-subtitle">Secure your luxury experience in just a few clicks</p>
-        
-        <div class="booking-wrapper">
-          <form id="bookingForm" class="booking-form" novalidate>
-            <div class="booking-grid">
-              <div class="form-group">
-                <label for="checkIn">Check-in Date</label>
-                <input id="checkIn" type="date" required>
-              </div>
-              <div class="form-group">
-                <label for="checkOut">Check-out Date</label>
-                <input id="checkOut" type="date" required>
-              </div>
-              <div class="form-group">
-                <label for="guests">Number of Guests</label>
-                <select id="guests" required>
-                  <option value="">Select guests</option>
-                  <option value="1">1 Guest</option>
-                  <option value="2">2 Guests</option>
-                  <option value="3">3 Guests</option>
-                  <option value="4">4 Guests</option>
-                  <option value="5">5+ Guests</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="roomType">Room Type</label>
-                <select id="roomType" required>
-                  <option value="">Choose room</option>
-                  <option value="ac">AC Room - ₹2,000/night</option>
-                  <option value="nonac">Non-AC Room - ₹1,000/night</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="booking-summary">
-              <div class="summary-item">
-                <span>Number of Nights:</span>
-                <span id="nightsCount" class="gold">0</span>
-              </div>
-              <div class="summary-item">
-                <span>Price per Night:</span>
-                <span id="pricePerNight" class="gold">₹0</span>
-              </div>
-              <div class="summary-item total">
-                <span>Total Amount:</span>
-                <span id="totalPrice" class="gold">₹0</span>
-              </div>
-            </div>
-
-            <div class="guest-info">
-              <h3>Guest Details</h3>
-              <div class="booking-grid">
-                <div class="form-group">
-                  <label for="guestName">Full Name</label>
-                  <input id="guestName" type="text" required>
-                </div>
-                <div class="form-group">
-                  <label for="guestEmail">Email Address</label>
-                  <input id="guestEmail" type="email" required>
-                </div>
-                <div class="form-group">
-                  <label for="guestPhone">Phone Number</label>
-                  <input id="guestPhone" type="tel" required>
-                </div>
-                <div class="form-group">
-                  <label for="guestRequests">Special Requests</label>
-                  <textarea id="guestRequests" rows="3" placeholder="Any special requests for your stay?"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-large">Complete Reservation</button>
-            <div id="bookingStatus" class="form-status" aria-live="polite"></div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews Section -->
-    <section id="reviews" class="section reviews">
-      <div class="wrap">
-        <h2 class="section-title">Guest Reviews</h2>
-        <p class="section-subtitle">See what our guests have to say</p>
-        
-        <div class="rating-header">
-          <div class="rating-display">
-            <div class="rating-score">4.1</div>
-            <div class="rating-stars">★★★★☆</div>
-            <div class="rating-count">Based on 372 reviews</div>
-          </div>
-        </div>
-        
-        <div class="reviews-grid">
-          <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <h3>Excellent Stay!</h3>
-            <p>"Had a wonderful experience at Hotel Tarasha. The rooms are clean and comfortable, staff is very friendly, and the location near the Gurudwara is peaceful. Highly recommended for a relaxing getaway."</p>
-            <p class="review-author">— Rajesh Kumar</p>
-          </div>
-          <div class="review-card">
-            <div class="review-stars">★★★★☆</div>
-            <h3>Great Value for Money</h3>
-            <p>"Very good hotel for the price. Comfortable rooms, hot water supply is consistent, and the restaurant food is tasty. 24/7 reception staff was helpful. Will visit again on my next trip."</p>
-            <p class="review-author">— Priya Singh</p>
-          </div>
-          <div class="review-card">
-            <div class="review-stars">★★★★☆</div>
-            <h3>Decent and Peaceful</h3>
-            <p>"Nice hotel in a quiet location. Rooms are well-maintained with good amenities. Free WiFi works great. The only suggestion would be to improve the dining menu variety, but overall a good stay."</p>
-            <p class="review-author">— Arjun Patel</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    
     <!-- Location & Map Section -->
     <section id="location" class="section location">
       <div class="wrap">
@@ -515,7 +395,7 @@
     <a class="fab fab-call" href="tel:+916263102010" aria-label="Call Hotel Tarasha">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.09 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.05.36 2.07.7 3.03a2 2 0 0 1-.45 2.11L9.91 10.09a16 16 0 0 0 6 6l1.23-1.23a2 2 0 0 1 2.11-.45c.96.34 1.98.58 3.03.7A2 2 0 0 1 22 16.92z" fill="currentColor"></path>
-      </svg>fff fffffffff  
+      </svg> 
       <span class="fab-text">Call</span>
     </a>
 
