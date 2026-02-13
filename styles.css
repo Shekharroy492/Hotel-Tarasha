@@ -509,8 +509,18 @@ main {
 
 .room-image {
   position: relative;
-  height: 250px;
-  overflow: hidden;
+  height: 300px;
+  background-image: url(room1.png) ;
+background-size: cover;
+background-position: center;
+}
+
+.room-image2 {
+  position: relative;
+  height: 300px;
+  background-image: url(room2.png) ;
+background-size: cover;
+background-position: center;
 }
 
 .room-image img {
