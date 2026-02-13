@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hoteltarasha.com/sitemap.xml
