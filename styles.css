@@ -1211,6 +1211,43 @@ background-position: center;
   transform: translateY(-2px);
 }
 
+.socials a[aria-label="Instagram"] {
+  background: transparent;
+  border: none;
+  color: var(--cream);
+}
+
+.socials a.insta-link {
+  width: auto;
+  min-width: auto;
+  height: auto;
+  padding: 0;
+  border-radius: 0;
+  gap: 8px;
+}
+
+.socials .insta-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.socials .insta-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.socials .social-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
 .news-form {
   display: flex;
   gap: 0.5rem;
