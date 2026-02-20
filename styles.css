@@ -2448,3 +2448,21 @@ background-position: center;
     transform: translateY(0);
   }
 }
+
+/* Restaurant slider: reduce image crop on mobile */
+@media (max-width: 768px) {
+  .room-card.restaurant-card .room-image3 {
+    height: 250px;
+  }
+
+  .room-card.restaurant-card .restaurant-slider .slide {
+    object-fit: cover;
+    object-position: center 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .room-card.restaurant-card .room-image3 {
+    height: 235px;
+  }
+}
