@@ -308,5 +308,25 @@ document.addEventListener('keydown', (e)=>{
   }
 })();
 
-// end of script.js
+// Auto slider for image cards
+(function(){
+  const sliders = document.querySelectorAll('.auto-slider');
+  if (!sliders.length) return;
 
+  sliders.forEach((slider) => {
+    const slides = Array.from(slider.querySelectorAll('.slide'));
+    if (slides.length <= 1) return;
+
+    const interval = Number(slider.getAttribute('data-interval')) || 1000;
+    let index = slides.findIndex((slide) => slide.classList.contains('is-active'));
+    if (index < 0) index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove('is-active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('is-active');
+    }, interval);
+  });
+})();
+
+// end of script.js
