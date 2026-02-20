@@ -653,12 +653,26 @@ background-position: center;
 
 /* ============ AMENITIES SECTION ============ */
 .amenities {
-  background-image:
-    linear-gradient(135deg, rgba(245, 241, 232, 0.45) 0%, rgba(232, 220, 203, 0.38) 100%),
-    url(amenities-bg-v2.jpg);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(245, 241, 232, 0.62) 0%, rgba(232, 220, 203, 0.54) 100%);
+}
+
+.amenities::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(amenities-bg-v2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.42;
+  z-index: 0;
+}
+
+.amenities .wrap {
+  position: relative;
+  z-index: 1;
 }
 
 .amenities-grid {
@@ -2062,6 +2076,7 @@ background-position: center;
   .booking-grid{grid-template-columns:1fr}
   .booking-form-wrapper{padding:1.2rem}
   .rooms-grid{grid-template-columns:1fr}
+  .amenities::before { opacity: 0.5; }
   
   /* Location Section - Tablets */
   .location-container {
@@ -2222,6 +2237,7 @@ background-position: center;
   .rooms-grid{grid-template-columns:1fr;gap:.8rem}
   .room-card img{height:120px}
   .room-card{padding:0}
+  .amenities::before { opacity: 0.56; }
   
   .site-footer{padding:1.5rem 0}
   .footer-grid{gap:.5rem}
