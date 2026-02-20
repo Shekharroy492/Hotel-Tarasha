@@ -546,6 +546,7 @@ background-position: center;
 .restaurant-slider {
   position: absolute;
   inset: 0;
+  touch-action: pan-y;
 }
 
 .restaurant-slider .slide {
